@@ -2,8 +2,8 @@ import {useInput} from './useInput.js'
 
 const App = () => {
   // const maxLen = value => value.length <= 10;
-  const maxLen = value => !value.includes('@');
-  const name = useInput('Mr.', maxLen);
+  const noAt = value => !value.includes('@');
+  const name = useInput('Mr.', noAt);
   return  (
     <div className="App">
       <h1>Hello</h1>
